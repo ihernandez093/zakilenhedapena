@@ -1,0 +1,155 @@
+/* Wrappers the elements of the auth component */
+.topWrapper {
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+}
+
+/* Triangle element */
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-right: 250px solid #292826;
+  border-bottom: 80px solid transparent;
+  position: absolute;
+  right: 0;
+  top: -90px;
+  z-index: -1;
+  opacity: 0.7;
+}
+/* Circle element */
+.circle {
+  height: 300px;
+  width: 300px;
+  background-color: #f9d342;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50px;
+  left: -110px;
+  z-index: -1;
+}
+/* Contains the dark theme and the form area */
+.container {
+  background: white;
+  height: 80%;
+  width: 80%;
+  margin: 5% auto;
+  border-radius: 15px;
+  z-index: 10;
+  opacity: 0.8;
+  display: grid;
+  grid-template-columns: 30% auto;
+  z-index: 100;
+}
+@media (max-width: 1024px) {
+  .container {
+    height: 80%;
+    width: 90%;
+    margin: 10% auto;
+    grid-template-rows: 35% auto;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+  }
+  .triangle-left {
+    display: none;
+  }
+  .circle {
+    display: none;
+  }
+}
+
+/* Contains the bank logo and name */
+.blackTheme {
+  background: #292826;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 40% auto 50%;
+  grid-gap: 30px;
+  width: 100%;
+}
+/* The bank icon */
+.bankIcon {
+  align-self: end;
+  margin: 0 auto;
+  color: #f9d342;
+  text-align: center;
+}
+/* Bank title */
+.blackTheme h2 {
+  color: #dae1e7;
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: 35px;
+  text-align: center;
+}
+/* Bank mission */
+.blackTheme p {
+  color: #f9d342;
+  margin: 0 auto;
+  font-weight: bolder;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .blackTheme {
+    grid-template-rows: 40% auto 50%;
+    grid-gap: 18px;
+  }
+  .bankIcon {
+    font-size: 20px;
+  }
+  .blackTheme h2 {
+    font-size: 30 px;
+  }
+  .blackTheme p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .blackTheme {
+    grid-template-rows: 40% auto 50%;
+    grid-gap: 18px;
+  }
+  .bankIcon {
+    font-size: 16px;
+  }
+  .blackTheme h2 {
+    font-size: 25 px;
+  }
+  .blackTheme p {
+    font-size: 17px;
+  }
+}
+/* hides the area that houses the validation error */
+.hideError {
+  display: none;
+}
+
+/* color for the validation errors */
+.displayError {
+  display: block;
+  color: red;
+  font-weight: 700;
+}
+
+/* This is used as the default style for any submit button */
+.submitButton {
+  background-color: #292826;
+  color: white;
+  border: 1px solid #292826;
+  cursor: pointer;
+  height: 35px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .submitButton {
+    height: 60px;
+    font-size: 30px;
+  }
+  .formGroup span {
+    font-size: 30px;
+  }
+}

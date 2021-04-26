@@ -1,0 +1,73 @@
+.bankLogoWrapper {
+  display: grid;
+  grid-template-columns: 20% auto;
+  align-items: center;
+  padding-left: 10px;
+  background-color: #181818;
+  color: #f9d342;
+}
+
+.profileImageWrapper {
+  display: grid;
+  grid-gap: 10px;
+  color: #181818;
+  grid-template-rows: 60% 5% 35%;
+  justify-content: center;
+  border-bottom: 3px solid #f9d342;
+  background-color: #dae1e7;
+  font-weight: 600;
+}
+
+.profileImageWrapper img {
+  height: 100px;
+  align-self: end;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profileImageWrapper span {
+  margin: 0 auto;
+  color: #f9d342;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px black;
+}
+.profileImageWrapper i {
+  margin: 0 auto;
+}
+
+.navigation .navWrapper {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 20% auto;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.navigation .navWrapper:hover {
+  background-color: #181818;
+}
+
+.navigation .navWrapper:focus {
+  background-color: #181818;
+  border-right: 5px solid #f9d342;
+  border-bottom: 1px solid #81817f;
+}
+
+@media (max-width: 1024px) {
+  .bankLogoWrapper h2 {
+    display: none;
+  }
+  .profileImageWrapper img {
+    display: none;
+  }
+  .profileImageWrapper span {
+    display: none;
+  }
+  .profileImageWrapper i {
+    display: none;
+  }
+  .navigation i {
+    font-size: 20px;
+  }
+}

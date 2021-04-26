@@ -1,0 +1,9 @@
+.transactWrapper {
+  width: 100%;
+}
+
+.accountForm {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}

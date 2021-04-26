@@ -1,0 +1,28 @@
+#customerTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customerTable td,
+#customerTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customerTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customerTable tr:hover {
+  background-color: #ddd;
+}
+
+#customerTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f9d342;
+  color: #323232;
+  font-weight: 700;
+}

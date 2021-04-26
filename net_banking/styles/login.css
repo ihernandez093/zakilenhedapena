@@ -1,0 +1,86 @@
+.lightThemeLogin {
+  display: grid;
+  grid-template-rows: 30% 40% auto;
+  max-width: 100%;
+  padding: 0 50px;
+  grid-gap: 4px;
+}
+.lightThemeLogin h3 {
+  font-size: 30px;
+  color: #292826;
+  align-self: end;
+  font-weight: 600;
+}
+.lightThemeLogin form {
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 15px;
+  width: 100%;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .lightThemeLogin form {
+    grid-row-gap: 5px;
+  }
+}
+.lightThemeLogin p {
+  color: #292826;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.lightThemeLogin p a {
+  color: #292826;
+}
+
+.lightThemeLogin p a:hover {
+  text-decoration: underline;
+  transition: 0.8s;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select {
+  border: none;
+  border: 2px solid #3a3835;
+  color: #292826;
+  font-style: normal;
+  font-size: 20px;
+  height: 35px;
+  padding-left: 5px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .lightThemeLogin {
+    grid-template-rows: 60% auto;
+    margin-top: 30px;
+  }
+  .lightThemeLogin h3 {
+    display: none;
+  }
+  .lightThemeLogin p {
+    font-size: 30px;
+  }
+  .lightThemeLogin input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    border: none;
+    border-bottom: 1px solid #3a3835;
+    font-size: 30px;
+    height: 50px;
+    padding-left: 5px;
+    outline: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .lightThemeLogin h3 {
+    text-align: center;
+  }
+}

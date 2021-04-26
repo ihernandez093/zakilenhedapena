@@ -1,0 +1,34 @@
+/* Dashboard wrapper */
+.dashWrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 20% auto;
+  height: 100vh;
+  background-color: #323232;
+}
+
+/* Wrapper for the dark area */
+.dashBackTheme {
+  display: grid;
+  grid-template-rows: 10% 30% auto;
+  height: 100%;
+  width: 100%;
+  display: fixed;
+}
+
+@media (max-width: 1024px) {
+  .dashWrapper {
+    grid-template-columns: 50px auto;
+  }
+  .dashBackTheme span {
+    display: none;
+  }
+}
+
+/* Wrapper for the light area */
+.dashLightTheme {
+  background-color: #f6f6f6;
+  max-width: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+}

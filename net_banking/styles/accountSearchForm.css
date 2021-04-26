@@ -1,0 +1,56 @@
+/* Wrapper for the search form */
+.accountSearchForm {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 80% auto;
+  grid-gap: 10px;
+  padding: 12px 0;
+}
+@media (max-width: 1024px) {
+  .accountSearchForm {
+    grid-template-columns: 60% auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .accountSearchForm {
+    grid-template-columns: 55% auto;
+  }
+}
+
+/* styles for text input and button in search area */
+.accountSearchForm input,
+.searchButton {
+  border: none;
+  border: none;
+  color: #292826;
+  font-style: normal;
+  font-size: 20px;
+  height: 35px;
+  padding: 0;
+  width: 100%;
+}
+
+/* custom styles for text input in search area */
+.accountSearchForm input[type="text"] {
+  padding: 0 0 0 10px;
+  outline-color: #f9d342;
+}
+
+/* Reduce the font-size and height of the input element */
+@media (max-width: 768px) {
+  .accountSearchForm input,
+  .searchButton {
+    font-size: 17px;
+    height: 30px;
+  }
+}
+
+/* search button styles */
+.searchButton {
+  background-color: #f9d342;
+  color: #65666b;
+  outline: none;
+  cursor: pointer;
+}
